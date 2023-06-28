@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="shop-holder">
+        <div class="categories-holder">
+          <div class="header__container">
+            <div class="header__menu">
+              <h2 class="categories-header">Menu</h2>
+              <div class="orders">
+                <div class="button__orders">
+                  <button id="my-orders">My Orders</button>
+                  <button id="clear-orders">Clear My Orders</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="categories-list">
+            <li class="categories-item">
+              <a href="#" id="Przystawki" class="categories-link"></a>
+            </li>
+            <li class="categories-item">
+              <a href="#" id="Zupy" class="categories-link"></a>
+            </li>
+            <li class="categories-item">
+              <a href="#" id="Napoje" class="categories-link"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="products-holder"></div>
+        <div class="product-info"></div>
+      </div>
+      <div class="info-holder">
+        <form action="" class="main-form">
+          <label for="fullName">ПІБ покупця:</label>
+          <input
+            type="text"
+            class="fullName"
+            name="fullName"
+            id="fullName"
+            required
+          />
+          <label for="city">Місто:</label>
+          <select name="City" id="city" class="city-select" required>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Odessa">Odessa</option>
+            <option value="Lviv">Lviv</option>
+          </select>
+          <label for="postOffice">Склад Нової пошти для надсилання:</label>
+          <input type="text" class="input-text" id="postOffice" required />
+          <fieldset class="payment" id="payment-method" name="payment-method">
+            <legend>Спосіб оплати:</legend>
+            <label for="nocard">Післяплата</label>
+            <input
+              type="radio"
+              id="nocard"
+              name="payment"
+              value="При получении"
+              required
+            />
+            <label for="card">Оплата банківською карткою</label>
+            <input type="radio" id="card" name="payment" value="Карта" />
+          </fieldset>
+          <label for="quantity">Кількість продукції, що купується:</label>
+          <input
+            type="number"
+            min="1"
+            id="quantity"
+            name="Кількість"
+            required
+          />
+          <label for="comment">Коментар до замовлення:</label>
+          <input type="text" id="comment" name="Комментарий" />
+          <button class="done-btn" id="done-btn">Купити</button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

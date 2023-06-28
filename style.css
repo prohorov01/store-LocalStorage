@@ -1,0 +1,108 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.categories-holder {
+  align-self: flex-start;
+}
+.header__menu {
+  display: flex;
+}
+.categories-list {
+  list-style: none;
+  padding: 0;
+}
+.categories-link {
+  text-decoration: none;
+}
+.product-list {
+  padding: 0;
+  list-style: none;
+}
+
+.product-name {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-price {
+  color: greenyellow;
+  float: right;
+}
+/* .product-info img{
+    height: 20px;
+    width: 20px;
+  } */
+.product-link {
+  display: block;
+}
+.button__orders {
+  display: flex;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: aliceblue;
+  border-radius: 16px;
+  width: 40%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal-close {
+  align-self: flex-end;
+  cursor: pointer;
+}
+.form-holder {
+  display: flex;
+  flex-direction: column;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.info-holder {
+  display: none;
+}
+
+.shop-holder {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+
+.orders {
+  display: flex;
+  padding: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+.order-info {
+  display: none;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
